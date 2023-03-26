@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1 class="logo">Travel</h1>
+            <div class="toggle"></div>
+        </header>
+        <video src="images & video/video1.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Get started on your vacation planning by Exploring wonderful Destination 
+                and find the gust behind your next adventure. 
+                You can click below to explore the world digitally 
+                and get help in choosing your next vacation destination</p>
+            <a href="">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href=""><img src="images & video/facebook.png" alt="" width="50" height="60"></a></li>
+            <li><a href=""><img src="images & video/twitter.png" alt="" width="60" height="60"></a></li>
+            <li><a href=""><img src="images & video/instagram.png" alt="" width="60" height="60"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const container = document.querySelector('.container');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            container.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
